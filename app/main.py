@@ -24,3 +24,6 @@ async def predict(file: UploadFile = File(...)):
         "predicted_class": predicted_class,
         "confidence": confidence
     }
+@app.get("/health")
+def health():
+    return {"status": "running"}

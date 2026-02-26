@@ -5,7 +5,7 @@ MODEL_PATH = "models/mobilenetv2.keras"
 
 model = tf.keras.models.load_model(MODEL_PATH)
 
-class_names = ["drive","legglance-flick","pullshot","sweep"]  # apne classes daalo
+class_names = ["drive","legglance-flick","pullshot","sweep"]
 
 
 def predict_image(img):
